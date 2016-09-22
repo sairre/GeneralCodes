@@ -12,3 +12,5 @@ As follow are lists of projects and descriptions:
 4.EnCoding    实现文件编码的转换，但是不能自由判断文件编码格式
 
 5.ThreadClass  实现一个windows下的线程类，使用基于对象的思想，可以实现普通函数绑定到线程运行的功能，暂时未实现普通函数传参问题，可以考虑boost库
+
+6.SQLManager  实现一个数据库访问类，暂定可以访问sqlserver，access，oracle
