@@ -6,8 +6,11 @@ class AccessSQLTool :
 {
 public:
 	AccessSQLTool();
-	virtual bool ConnectToSQL();
 	virtual ~AccessSQLTool();
+	virtual bool ConnectToSQL();
+	virtual bool ExecuteSQL(const char * sql_msg);
+	virtual std::vector<std::list<std::string> > QuerySQL(const char * sql_msg);
+	virtual bool CloseSQL();
 
 private:
 	_ConnectionPtr m_pConnection;
